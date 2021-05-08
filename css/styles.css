@@ -3,6 +3,8 @@
   --secondary-font: "Raleway", sans-serif;
   --accent-color: #2196f3;
   --main-background-color: #ffffff;
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
 }
 .list {
   list-style: none;
@@ -15,6 +17,7 @@
 body {
   font-family: var(--main-font);
   background-color: var(--main-background-color);
+  color: var(--main-text-color);
 }
 /* ============= COMPONENTS ============= */
 .section-title {
@@ -23,7 +26,6 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 /* ============= HEADER ============= */
 .head {
@@ -46,7 +48,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 .head-menu-link:hover,
 .head-menu-link:focus,
@@ -78,6 +80,7 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   background: var(--accent-color);
+  cursor: pointer;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -93,13 +96,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
 }
 .whyus-menu-item-description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 /* ============= WHAT WE DO ============= */
 
@@ -116,14 +118,13 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 .aboutus-menu-description {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 /* =============FOOTER ============= */
 .footer {
@@ -150,4 +151,45 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.adress-menu-link-adress:hover,
+.adress-menu-link-adress:focus,
+.adress-menu-link:hover,
+.adress-menu-link:focus {
+  color: var(--accent-color);
+}
+/* ============= HERO PORTFOLIO============= */
+.hero-portfolio-title {
+  color: var(--main-background-color);
+}
+.modal-btn-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background-color: #f5f4fa;
+  cursor: pointer;
+}
+.modal-btn-portfolio:hover,
+.modal-btn-portfolio:focus {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+/* ============= WORK EXAMPLES============= */
+.example-title-portfolio {
+  color: var(--main-background-color);
+}
+.example-menu-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.example-menu-description {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
